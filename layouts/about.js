@@ -7,7 +7,7 @@ $(document).ready(function() {
         <span class="font-semibold">Rizkia Febri Hardiansyah</span>
         <span>
           , you can call me Rizki. I was born in 
-          <a class="text-blue-500 hover:text-blue-600" href="https://maps.app.goo.gl/SqZBAKa9YZBB6aUS8">Bekasi, </a>
+          <a class="text-blue-500 hover:text-blue-600" rel="noopener noreferrer" href="https://maps.app.goo.gl/SqZBAKa9YZBB6aUS8">Bekasi, </a>
           19 Februari 1998.
         </span>
         <span> I have one Wife, one Son, and one Daughter, ooh they are very easy going.</span>
@@ -18,7 +18,7 @@ $(document).ready(function() {
         </span>
         <br><br>
         <span>My last education is 
-          <a class="font-semibold text-blue-500 hover:text-blue-600" href="https://pnj.ac.id/">Politeknik Negeri Jakarta</a>.
+          <a class="font-semibold text-blue-500 hover:text-blue-600" rel="noopener noreferrer" href="https://pnj.ac.id/">Politeknik Negeri Jakarta</a>.
         </span>
         <!-- <span>from 2017 to 2019, to preview my document of it, please 
           <a class="text-blue-500 hover:text-blue-600" href="">check this out</a>.
@@ -29,19 +29,17 @@ $(document).ready(function() {
         </span>
         <br>
         <span>Anyway, right now i really care about business, so i continue my education in 
-          <a class="font-semibold text-blue-500 hover:text-blue-600" href="https://www.unj.ac.id/">Universitas Negeri Jakarta </a>, since 2024's.
+          <a class="font-semibold text-blue-500 hover:text-blue-600" rel="noopener noreferrer" href="https://www.unj.ac.id/">Universitas Negeri Jakarta </a>, since 2024's.
           I take business education in faculty of economics. The reason why i decided to take this one is because i have failed build my own business, and i need learn more.
         </span>
         <br><br>
         <span>I love teaching, that's why in my Social Media such a 
-          <a class="text-blue-500 hover:text-blue-600" href="https://bit.ly/rizkia_linkedIn">LinkedIn</a>,
-          <a class="text-blue-500 hover:text-blue-600" href="https://www.youtube.com/channel/UCnVfDu39F09cwhRSryf3tdw">youtube</a>, and 
-          <a class="text-blue-500 hover:text-blue-600" href="https://www.tiktok.com/@sovlow">tiktok</a>
+          <a class="text-blue-500 hover:text-blue-600" rel="noopener noreferrer" href="https://bit.ly/rizkia_linkedIn">LinkedIn</a>,
+          <a class="text-blue-500 hover:text-blue-600" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCnVfDu39F09cwhRSryf3tdw">youtube</a>, and 
+          <a class="text-blue-500 hover:text-blue-600" rel="noopener noreferrer" href="https://www.tiktok.com/@sovlow">tiktok</a>
           i shared what i cared about, especially joking and programming about.
         </span>
         <span>Unfortunately i don't have much time so i don't make it much.</span>
-        <span>Talking about Social Media, here's mine, </span>
-        <a class="text-blue-500 hover:text-blue-600" href="">let's get in touch soon :)</a>.
       <div>
     </div>
   `);
