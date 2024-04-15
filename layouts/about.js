@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("main").append(`
     <div class="p-2">
-      <img src="assets/images/summary.png" class="ml-2 float-right object-cover h-80 w-auto border-2 border-blue-500 shadow-lg shadow-black">
+      <img src="assets/images/summary.png" class="ml-2 float-right object-cover h-80 w-auto border-2 border-blue-500 shadow-lg shadow-black" alt="img_error">
       <div class="text-justify text-lg mr-2">
         <span>Hello my name is </span>
         <span class="font-semibold">Rizkia Febri Hardiansyah</span>
