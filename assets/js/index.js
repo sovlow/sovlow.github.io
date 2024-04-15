@@ -25,7 +25,7 @@ $(document).ready(function() {
     </div>
   `);
   if ($('main').html() == '') {
-    contact();
+    about();
   }
   mdIcon(inc);
 });
