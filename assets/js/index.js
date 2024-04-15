@@ -2,8 +2,11 @@ var inc = 1;
 $(document).ready(function() {
   $('nav').append(`
     <div class="flex-1 self-center flex cursor-pointer resume">
-      <i class="fa-solid fa-user-tie text-white bg-blue-500 rounded rounded-full md:w-8 md:h-8 w-6 h-6 p-2"></i>
-      <p class="font-semibold self-center ml-2">Resume</p>
+      <i class="fa-solid fa-eye text-white bg-blue-500 rounded rounded-full md:w-8 md:h-8 w-6 h-6 p-2"></i>
+      <div class="grid grid-cols-1 text-sm font-semibold self-center ml-2">
+        <p>Preview</p>
+        <p>Resume</p>
+      </div>
     </div>
     <div class="flex-1 justify-end hidden md:flex">
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">About</button>
