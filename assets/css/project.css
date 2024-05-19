@@ -1,0 +1,250 @@
+/* Layout rules */
+section {
+  padding: 0rem 0 6rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Typography rules */
+a {
+  text-decoration: none;
+  color: #2e89ff;
+}
+
+p {
+  /* font-family: "Gotham Medium"; */
+  line-height: 0.6cm;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+/* Miscelaneous rules */
+.section--heading {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.section--heading h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.section--heading h1::before,
+.section--heading h1::after {
+  content: "";
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.842);
+}
+
+.section--heading h1::before {
+  width: 25%;
+  height: 3px;
+  border-radius: 0.8rem;
+}
+
+.section--heading h1::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  bottom: -1.3rem;
+}
+
+.section--heading h6 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(160, 160, 160);
+}
+
+.has-margin-right {
+  margin-right: 5rem;
+}
+
+.has-margin-left {
+  margin-left: 5rem;
+}
+
+/* Portfolio section */
+.portfolio__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio__item:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio__item__img {
+  flex: 0.9;
+}
+
+.portfolio__item__description {
+  flex: 1;
+  font-size: 4rem;
+}
+
+.portfolio__item__description h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.portfolio__item__description h6 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 350;
+  opacity: 0.6;
+  margin-bottom: 0rem;
+}
+
+.portfolio__item__description .cta {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #2e89ff;
+}
+
+.portfolio__item__description .cta:hover {
+  color: #0059ff;
+}
+
+.portfolio__square {
+  position: absolute;
+  height: 50%;
+  width: 20%;
+  right: 0%;
+  animation: move 4s infinite;
+}
+
+/* Tablet view rules */
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Miscelaneous rules */
+  .section--heading h1 {
+    font-size: 3rem;
+  }
+  .section--heading h1::after {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+  }
+
+  /* Portfolio section */
+  .portfolio__item__description h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Different breakpoint */
+/* Wider phone view / Tablet */
+@media screen and (max-width: 600px) {
+  /* Achievements section rules */
+  .achievement__square {
+    width: 22%;
+    height: 15%;
+    top: 110rem;
+  }
+  .achievement__skills {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-row-gap: 8rem;
+  }
+
+  /* Portfolio section rules */
+  .portfolio__item {
+    flex-direction: column;
+  }
+  .portfolio__item__img {
+    margin: 0 0 2rem 0;
+  }
+  .portfolio__item__description {
+    flex: 1;
+  }
+  .portfolio__item__description h1 {
+    font-size: 2.25rem;
+    margin: 1rem 0rem;
+    font-weight: 400;
+  }
+  .portfolio__item__description h6 {
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.6;
+  }
+  .portfolio__item__description .cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+    color: #2e89ff;
+  }
+  .portfolio__item__description {
+    margin: 0;
+    order: 2;
+  }
+  .portfolio__square {
+    width: 25%;
+    height: 25%;
+  }
+}
+
+/* Smaller phone view rules */
+@media screen and (max-width: 300px) {
+  /* Miscelaneous section */
+  .section--heading h1 {
+    font-size: 2.2rem;
+  }
+  .section--heading h6 {
+    font-size: 1.7rem;
+  }
+
+  /* Header / Hero section */
+  .landing-text h1 {
+    font-size: 5rem;
+  }
+  .landing-text h6 {
+    font-size: 1rem;
+  }
+
+  /* Portfolio section */
+  .portfolio__item__description h1 {
+    font-size: 2.1rem;
+  }
+  .portfolio__item__description h6,
+  .portfolio__item__description .cta {
+    font-size: 1.4rem;
+  }
+}
+
+/* Height breakpoint */
+/* Smaller viewport height rules */
+@media screen and (max-height: 540px) {
+  /* Header / Hero section */
+  header {
+    height: 540px;
+  }
+  .landing-text {
+    top: 0;
+    left: unset;
+    transform: unset;
+  }
+
+  /* About me section */
+  section.about {
+    margin-top: 12rem;
+  }
+}

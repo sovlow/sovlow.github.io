@@ -1,15 +1,16 @@
 var inc = 1;
-$(document).ready(function() {
+$(document).ready(function () {
   $('nav').append(`
     <div class="flex-1 self-center flex cursor-pointer resume">
       <i class="fa-solid fa-eye text-white bg-blue-500 rounded rounded-full md:w-8 md:h-8 w-6 h-6 p-2"></i>
       <div class="grid grid-cols-1 text-sm font-semibold self-center ml-2">
-        <p>Preview</p>
-        <p>Resume</p>
+        <span>Preview</span>
+        <span>Resume</span>
       </div>
     </div>
     <div class="flex-1 justify-end hidden md:flex">
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">About</button>
+      <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">Projects</button>
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">Experiences</button>
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">Expertises</button>
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">Certificates</button>
@@ -22,6 +23,7 @@ $(document).ready(function() {
 
     <div id="menuItems" class="md:hidden absolute top-12 right-0 grid grid-cols-1 bg-blue-200 p-2 gap-2">
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">About</button>
+      <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">Projects</button>
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">Experiences</button>
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">Expertises</button>
       <button class="menu mx-1 rounded-md border border-gray-300 shadow-sm p-1 bg-blue-500 font-medium text-white hover:bg-blue-600">Certificates</button>
@@ -34,7 +36,7 @@ $(document).ready(function() {
   mdIcon(inc);
 });
 
-$(document).on('click', '.menu-icon,.menu', function() {
+$(document).on('click', '.menu-icon,.menu', function () {
   inc += 1;
   mdIcon(inc)
 });
@@ -47,15 +49,18 @@ function mdIcon(toggle) {
   }
 }
 
-$(document).on('click', '.resume', function() {
+$(document).on('click', '.resume', function () {
   var url = "resume.html";
   window.open(url, '_blank');
 });
 
-$(document).on('click', '.menu', function() {
+$(document).on('click', '.menu', function () {
   let menu = $(this).text();
   $("main").empty();
   switch (menu) {
+    case "Projects":
+      project();
+      break;
     case "Experiences":
       experience();
       break;
@@ -68,11 +73,26 @@ $(document).on('click', '.menu', function() {
     case "Contacts":
       contact();
       break;
+    case "Projects":
+      project();
+      break;
     default:
       about();
       break;
   }
 });
+
+function project() {
+  script = document.createElement('script');
+  script.src = 'layouts/projects.js';
+  script.type = 'text/javascript';
+  document.body.parentNode.appendChild(script);
+
+  var link = document.createElement('link');
+  link.href = 'assets/css/project.css';
+  link.rel = 'stylesheet';
+  document.head.appendChild(link);
+}
 
 function expertise() {
   script = document.createElement('script');
