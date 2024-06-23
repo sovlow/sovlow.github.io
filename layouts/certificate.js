@@ -21,6 +21,8 @@ $(document).ready(function() {
 	`);
 });
 
+$('title').replaceWith('<title>Rizkia Portfolio | Certificate</title>');
+
 $(document).on('click', '.certificate', function(){
   let img = $(this).attr('src');
   $(".preview").remove();

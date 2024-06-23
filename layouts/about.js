@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $("main").append(`
     <div class="p-2">
-      <img src="assets/images/summary.png" class="ml-2 float-right object-cover h-80 w-auto border-2 border-blue-500 shadow-lg shadow-black" alt="img_error">
-      <div class="text-justify text-lg mr-2">
+      <img src="assets/images/my-ascii.png" class="m-10 float-right object-cover h-80 w-auto rounded-md shadow-lg shadow-black dark:shadow-white dark:bg-white bg-black" alt="img_error">
+      <div class="text-justify text-lg mx-10">
         <span>Hello my name is </span>
         <span class="font-semibold">Rizkia Febri Hardiansyah</span>
         <span>
@@ -45,3 +45,5 @@ $(document).ready(function() {
   `);
   $("a").attr("target", "_blank");
 });
+
+$('title').replaceWith('<title>Rizkia Portfolio | About</title>');
