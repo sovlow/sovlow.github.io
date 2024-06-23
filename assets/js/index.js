@@ -9,7 +9,7 @@ $(document).ready(function () {
       <li class="cursor-pointer menu hover:text-yellow-300">Expertises</li>
       <li class="cursor-pointer menu hover:text-yellow-300">Contacts</li>
     </ul>
-    <button id="theme-toggle" class="resume hidden md:block p-2 bg-yellow-300 dark:bg-gray-600 rounded transition duration-300">CV</button>
+    <button class="resume hidden md:block p-2 bg-yellow-300 dark:bg-gray-600 rounded transition duration-300">CV</button>
         
     <button class="text-white menu-icon md:hidden flex text-3xl self-center">
       <i class="fa-solid fa-bars"></i>
